@@ -1,38 +1,249 @@
-.App {
-  text-align: center;
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  font-family: "Roboto";
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+  height: 100%;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul, ol {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  position: relative;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+header:before {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: grow 60s linear .5s infinite;
+  background: linear-gradient(rgba(65, 85, 131, 0.6), rgba(86, 35, 95, 0.6)), url("../public/images/navImage.jpg") no-repeat fixed top center;
+  background-size: cover; /* Maintain aspect ratio and cover the entire header */
+
+}
+  header nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+header nav .logo {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 20px 20px 10px 20px;
+}
+
+header nav .logo a {
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav li a {
+  color: #fff;
+  display: block;
+  position: relative;
+  padding: 20px 20px 10px;
+}
+
+header nav li a:before, header nav li a:after {
+  content: "";
+  bottom: 0;
+  width: 0px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav li a:before {
+  right: 50%;
+}
+
+header nav li a:after {
+  left: 50%;
+}
+
+header nav li a:hover:before , header nav li a:hover:after {
+  width: 50%;
+}
+
+@keyframes grow {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.6) rotate(0deg); }
+}
+
+@-webkit-keyframes grow {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.6) rotate(0deg); }
+}
+
+@media only screen and (max-width: 290px) {
+  header nav ul {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
   }
 }
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+
+
+
+
+
+
+
+
+.footer-social-icons {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.social-icon {
+  color: #fff;
+}
+
+ul.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+
+.fa-rss {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-rss:hover {
+  background-color: #eb8231;
+}
+
+.fa-youtube {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+
+.fa-soundcloud {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-soundcloud:hover {
+  background-color: #1b9f49;
+}
+
+.fa-tiktok{
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+.fa-tiktok:hover {
+  background-color: #821b61;
+}   
+
+
+.fontawesomeicon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+ }
+
+.Tiktok::before {
+   font: var(--fa-font-brands);
+    content: ' \e07b';
+ }
