@@ -2,153 +2,89 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-
-
 .footer-social-icons {
-    width: 350px;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .social-icon {
-    color: #fff;
-  }
-  
-  ul.social-icons {
-    margin-top: 10px;
-  }
-  
-  .social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
-  }
-  
-  .social-icons a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .fa-facebook {
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-  }
-  
-  .fa-facebook:hover {
-    background-color: #3d5b99;
-  }
-  
-  .fa-twitter {
-    padding: 10px 12px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-  }
-  
-  .fa-twitter:hover {
-    background-color: #00aced;
-  }
-  
-  .fa-rss {
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-  }
-  
-  .fa-rss:hover {
-    background-color: #eb8231;
-  }
-  
-  .fa-youtube {
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-  }
-  
-  .fa-youtube:hover {
-    background-color: #e64a41;
-  }
-  
-  .fa-soundcloud {
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-  }
-  
-  .fa-soundcloud:hover {
-    background-color: #1b9f49;
-  }
-  
-  .fa-tiktok{
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-  }
-  
-  .fa-tiktok:hover {
-    background-color: #821b61;
-  }   
+ 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  align-items: center;
+  /* background: rgba(0, 0, 0, 0.7);  Semi-transparent black background */ 
+  background-color: rgb(14, 13, 13);
+  padding: 20px;
+  color: #fff; /* Text color is white */
+}
 
-  .fa-instagram{
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-  }
-  
-  .fa-instagram:hover {
-    background-color: #c01782;
-  }   
+.social-icons {
+  list-style: none; /* Remove bullets from list items */
+  padding: 0; /* Remove default padding from list */
+  display: flex;
+}
 
-  .fa-spotify{
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+
+.fa-youtube:hover {
+  background-color: #e71123;
+}
+
+.fa-soundcloud:hover {
+    background-color: #d76a1c;
   }
-  
+
   .fa-spotify:hover {
-    background-color: #109d2a;
-  }   
+    background-color: #0cc221;
+  }
+
+  .fa-instagram:hover {
+    background-color: #b62980;
+  }
+
+
+  .fa-twitter:hover {
+    background-color: #3b71d5;
+  }
+
+  .fa-facebook:hover {
+    background-color: #2b1dcb;
+  }
+
+
+.tiktok-icon {
+    padding: 10px 14px;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #322f30;
+  }
   
   
-  .fontawesomeicon::before {
-      display: inline-block;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-   }
   
-  .Tiktok::before {
-     font: var(--fa-font-brands);
-      content: ' \e07b';
-   }
+  
+  
+  
+  .tiktok-icon:hover {
+    /* TikTok Black */
+    background-color: #ff0050;
+  }
+  

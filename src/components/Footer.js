@@ -2,6 +2,10 @@
 import "./Footer.css"; 
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
+
 
 function Footer() {
   return (
@@ -18,33 +22,34 @@ function Footer() {
         </p>
 
         <ul className="social-icons">
+        
           <li>
-            <a href="https://www.facebook.com" className="social-icon">
+            <a href="https://www.facebook.com/conrad.keys.3?mibextid=LQQJ4d" className="social-icon">
               {" "}
               <i className="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.twitter.com" className="social-icon">
+            <a href="https://x.com/rageforyourlove?s=11&t=Yp453X_No-B_Tlobrhbq8A" className="social-icon">
               {" "}
               <i className="fa fa-twitter"></i>
             </a>
           </li>
 
           <li>
-            <a href="https://www.youtube.com" className="social-icon">
+            <a href="https://www.youtube.com/channel/UCUwSo2fluLTbOTl7yGZNw6Q?si=lxkynYhDjPlZe9K" className="social-icon">
               {" "}
               <i className="fa fa-youtube"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.soundcloud.com" className="social-icon">
+            <a href="https://on.soundcloud.com/wyZBN" className="social-icon">
               {" "}
               <i className="fa fa-soundcloud"></i>
             </a>
           </li>
           <li>
-  <a href="https://www.spotify.com" className="social-icon" >
+  <a href="https://open.spotify.com/artist/5YJKTUW8xDQnOjBxcj29Wm?si=dpGRM5VNRi-GgLvUAyry3g" className="social-icon" >
    {""}
     <i className="fa fa-spotify"></i> 
    
@@ -52,12 +57,17 @@ function Footer() {
 </li>
 
 <li>
-  <a href="https://www.instagram.com" className="social-icon">
+  <a href="https://instagram.com/_damienshane?igshid=YTQwZjQONml0OA%3D%3D&utm_source=qr" className="social-icon">
     {""}
     <i className="fa fa-instagram"></i> 
    
    
   </a>
+</li>
+<li>
+<a href="https://www.tiktok.com" className="social-icon">
+  <FontAwesomeIcon icon={faTiktok} className="tiktok-icon" />
+</a>
 </li>
 
 
