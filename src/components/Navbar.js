@@ -1,30 +1,29 @@
 // Navbar.js
+import  "./NavBar.css"; 
 function Navbar() {
   return (
     <>
-   
-        <nav>
-          <div id="wrapper">
-            <div className="logo">Your Logo</div>
-            <ul className="nav-links">
-              <li>
-                <a href="/name">Damien Shane</a>
-              </li>
-              <li>
-                <a href="/bio">Bio</a>
-              </li>
-              <li>
-                <a href="/music">My Music</a>
-              </li>
-              <li>
-                <a href="/contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-     
+     <header>
+  <h1 className="logo"><a href="#">DAMIEN SHANE</a></h1>
+  <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
+  <nav>
+    <ul>
+      <li><a href="#">BIO</a></li>
+      <li><a href="#">MUSIC</a></li>
+      <li><a href="#">VIDEOS</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+  <label htmlFor="nav-toggle" title="Show navbar" className="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
     </>
   );
 }
 
 export default Navbar;
+
+
+
+
