@@ -1,29 +1,39 @@
-// Navbar.js
-import  "./NavBar.css"; 
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'; // Import Link
+import "./NavBar.css";
+
 function Navbar() {
   return (
-    <>
-     <header>
-  <h1 className="logo"><a href="#">DAMIEN SHANE</a></h1>
-  <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
-  <nav>
-    <ul>
-      <li><a href="#">BIO</a></li>
-      <li><a href="#">MUSIC</a></li>
-      <li><a href="#">VIDEOS</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
-  </nav>
-  <label htmlFor="nav-toggle" title="Show navbar" className="nav-toggle-label">
-    <span></span>
-  </label>
-</header>
-    </>
-  );
-}
+   
+        <>
+         <header>
+          <h1 className="logo">DAMIEN SHANE</h1>
+          <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
+          <nav>
+            <ul>
+              <li>
+                <a href="#bio">BIO</a>
+              </li>
+              <li>
+                <a href="#music">MUSIC</a>
+              </li>
+              <li>
+                <a href="#videos">VIDEOS</a>
+              </li>
+              <li>
+                <a href="#footer">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <label htmlFor="nav-toggle" title="Show navbar" className="nav-toggle-label">
+            <span></span>
+          </label>
+         </header>
+        </>
+      );
+    }
+    
 
 export default Navbar;
-
-
 
 
