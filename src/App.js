@@ -17,6 +17,7 @@ function App() {
       <section id="bio">
         <Bio />
       </section>
+      <SlideShow />
       <section id="music">
         <Music />
       </section>
