@@ -3,9 +3,7 @@
     height: 100%;
     background: #141e30;
   } */
-  body {
-    font-family: sans-serif;
-  }
+ 
   
   .login-box {
     margin: 0 auto;
@@ -203,4 +201,21 @@
    .hidden-input {
     display: none;
   }
-   
+  .user-box input:focus ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+ 
+  
+  .success-message,
+.error-message {
+    background: #8012e1; /* Green color for success message */
+  color: #fff;
+  padding: 10px;
+  margin: 30px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
