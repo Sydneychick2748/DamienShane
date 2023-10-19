@@ -5,6 +5,7 @@ import Footer from "../src/components/Footer";
 import Bio from "../src/components/Bio";
 import Music from "../src/components/Music";
 import Videos from "../src/components/Videos";
+import Contact from "../src/components/Contact";
 
 import SlideShow from "../src/components/SlideShow";
 
@@ -24,10 +25,10 @@ function App() {
       <section id="videos">
         <Videos />
       </section>
-      <section id="footer">
-        <Footer />
+      <section id="contact">
+        <Contact />
       </section>
-      {/* Additional sections go here */}
+    <Footer/>
     </div>
   );
 }

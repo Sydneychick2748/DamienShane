@@ -21,7 +21,7 @@ function Navbar() {
                 <a href="#videos">VIDEOS</a>
               </li>
               <li>
-                <a href="#footer">CONTACT</a>
+                <a href="#contact">CONTACT</a>
               </li>
             </ul>
           </nav>
