@@ -159,3 +159,30 @@ nav li{ margin: 1.2rem; }
     justify-content: flex-end;
   }
 }
+
+
+/* Existing CSS styles */
+
+/* Media query for screens with a maximum width of 480px (typical for cell phones) */
+@media screen and (max-width: 480px) {
+    
+    .nav-toggle-label {
+      /* Adjust the position and styles for the hamburger menu (which will be hidden) */
+      display: none;
+    }
+  
+    nav a {
+      /* Hide the navigation links on small screens */
+      display: none;
+    }
+  
+    .logo {
+        font-size: 60px;
+      /* Position the website owner's name at the top */
+      text-align: center;
+      padding: 10px; /* Add some padding for better visibility */
+    }
+  
+    
+  }
+  

@@ -8,7 +8,7 @@ function Navbar() {
         <>
          <header>
           <h1 className="logo">DAMIEN SHANE</h1>
-          <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
+        
           <nav>
             <ul>
               <li>
