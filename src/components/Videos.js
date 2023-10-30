@@ -1,10 +1,20 @@
+import React from "react";
+
+import "./Videos.css";
+
+
+
 function Videos() {
     return (
-     <>
-     <h1>
-        Watch
-     </h1>
-     </>
+        <div className="video-container">
+      <h1 className="video-title">Watch Videos</h1>
+      <div className="video-content">
+        <video className="video-player" controls>
+          <source src="/videos/PBAve17SEP23.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
     );
   }
   
