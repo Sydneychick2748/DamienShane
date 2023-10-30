@@ -2,12 +2,14 @@
 /* Styling for the video component */
 .video-container {
     display: flex;
+    flex-direction: column; /* Change the flex direction to stack elements vertically */
     background: rgba(9, 10, 10, 0.7);
     color: white;
     font-weight: 700;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(6, 3, 28, 0.2);
     margin: 2em;
+    align-items: center; /* Center horizontally within the container */
   }
   
   .video-content {
@@ -16,22 +18,23 @@
     align-items: center;
     padding: 30px;
     flex: 1;
+    text-align: center; /* Center the text and video */
   }
   
-  .video-title {
-   font-size: 60px;
+  /* .video-title {
+    font-size: 35px;
     margin: 0;
-    padding: 100px;
+    padding: 20px; 
   }
-  
+   */
   .video-text {
-    font-size: 25px;
+    font-size:35px;
     line-height: 1.5;
     margin-top: 20px;
   }
   
   .video-player {
-  width: 1000px; /* Set the width you want */
-  height: 600px; /* Set the height you want */
-}
-
+    width: 1000px; /* Set the width you want */
+    height: 600px; /* Set the height you want */
+  }
+  
