@@ -6,20 +6,19 @@ import "./Contact.css";
 
 const Contact = (e) => {
   const form = useRef();
-  const YOUR_PUBLIC_KEY = "OI-hkufm0aTZEzXQd";
-  const YOUR_SERVICE_ID = "service_haxhm6i";
+  const YOUR_PUBLIC_KEY = "6iqcvbQnVgibtYfNN";
+  const YOUR_SERVICE_ID = "service_eeiwyvg";
 
-  const YOUR_TEMPLATE_ID = "template_80lpey8";
+  const YOUR_TEMPLATE_ID = "template_410c4vb";
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   //Add state variables for message visibility
   const [isSuccessVisible, setIsSuccessVisible] = useState(false);
   const [isErrorVisible, setIsErrorVisible] = useState(false);
-
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,11 +34,11 @@ const Contact = (e) => {
         (result) => {
           console.log("Email sent successfully:", result);
           setSuccessMessage("Email sent successfully");
-          setName('');
-          setEmail('');
-          setMessage('');
+          setName("");
+          setEmail("");
+          setMessage("");
           // Clear success message after a set time (e.g., 5 seconds)
-        setTimeout(() => {
+          setTimeout(() => {
             setSuccessMessage(null);
             setIsSuccessVisible(false);
           }, 5000);
@@ -48,11 +47,11 @@ const Contact = (e) => {
         (error) => {
           console.error("Email could not be sent. Error:", error);
           setErrorMessage("Email could not be sent. Error: " + error);
-          setName('');
-          setEmail('');
-          setMessage('');
+          setName("");
+          setEmail("");
+          setMessage("");
           // Clear success message after a set time (e.g., 5 seconds)
-        setTimeout(() => {
+          setTimeout(() => {
             setSuccessMessage(null);
             setIsSuccessVisible(false);
           }, 5000);
@@ -66,18 +65,33 @@ const Contact = (e) => {
       <h1>Get the Party Started!</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div className="user-box">
-          <input type="text" name="name" required value={name}
-    onChange={(e) => setName(e.target.value)}/>
+          <input
+            type="text"
+            name="name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
           <label>Name</label>
         </div>
         <div className="user-box">
-          <input type="email" name="email" required value={email}
-    onChange={(e) => setEmail(e.target.value)}/>
+          <input
+            type="email"
+            name="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <label>Email</label>
         </div>
         <div className="user-box">
-          <input type="text" name="message" required value={message}
-    onChange={(e) => setMessage(e.target.value)}/>
+          <input
+            type="text"
+            name="message"
+            required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
           <label>Message</label>
         </div>
         <input type="submit" value="Send" className="hidden-input" />
@@ -88,18 +102,14 @@ const Contact = (e) => {
           <span></span>
           Lets Connect
         </a>
-        {successMessage && <div className="success-message">{successMessage}</div>}
-    {errorMessage && <div className="error-message">{errorMessage}</div>}
-    {isSuccessVisible && (
-      <div className="success-message">
-        {successMessage}
-      </div>
-    )}
-    {isErrorVisible && (
-      <div className="error-message">
-        {errorMessage}
-      </div>
-    )}
+        {successMessage && (
+          <div className="success-message">{successMessage}</div>
+        )}
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
+        {isSuccessVisible && (
+          <div className="success-message">{successMessage}</div>
+        )}
+        {isErrorVisible && <div className="error-message">{errorMessage}</div>}
       </form>
     </div>
   );
