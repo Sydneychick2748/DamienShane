@@ -6,10 +6,11 @@ import "./Contact.css";
 
 const Contact = (e) => {
   const form = useRef();
-  const YOUR_PUBLIC_KEY = "6iqcvbQnVgibtYfNN";
-  const YOUR_SERVICE_ID = "service_eeiwyvg";
+  const YOUR_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+const YOUR_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const YOUR_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 
-  const YOUR_TEMPLATE_ID = "template_410c4vb";
+  
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
