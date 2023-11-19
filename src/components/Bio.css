@@ -1,0 +1,78 @@
+.bioContainerStyle {
+    display: flex;
+    background-color: rgba(9, 10, 10, 0.7); /* Charcoal with 70% opacity */
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(6, 3, 28, 0.2);
+    margin: 2em;
+  }
+  
+  .contentContainerStyle {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    padding: 30px;
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .titleStyle {
+    font-size: 60px;
+    margin-top: 0;
+    padding: 100px;
+  }
+  
+  .textStyle {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-top: 20px; /* Adjust the margin-top to add spacing between title and text */
+  }
+  
+  .bioImageStyle {
+    height: 100vh;
+    flex: 0 0 auto;
+    border-radius: 2em;
+  }
+  
+
+
+  /* Small devices (phones) */
+@media only screen and (max-width: 767px) {
+    /* Styles for small devices */
+    .textStyle {
+        /* font-size: 25px; */
+        line-height: 1.5;
+        margin-top: 20px;
+        font-size: 20px;
+  }
+  .titleStyle {
+    /* font-size: 60px; */
+    margin-top: 0;
+    padding: 100px;
+    font-size: 40px;
+}
+.bioContainerStyle {
+    margin:auto;
+
+
+
+}
+h1{
+    font-size: 40px !important;
+}
+.bioImageStyle{
+margin-left: 15px;
+padding-top: 50px;
+} 
+}
+  
+  /* Medium devices (tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium devices */
+  }
+  
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 992px) {
+    /* Styles for large devices */
+  }
+  

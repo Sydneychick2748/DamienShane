@@ -18,7 +18,7 @@ function Footer() {
           tracks, exclusive mixes, and tour dates. Join the EDM revolution and
           let the music move you.
         </p>
-
+<div className="list-footer">
         <ul className="social-icons">
           <li>
             <a
@@ -79,6 +79,7 @@ function Footer() {
             </a>
           </li>
         </ul>
+      </div>
       </div>
     </footer>
   );

@@ -1,46 +1,13 @@
 import React from "react";
+import "./Bio.css";
 
 function Bio() {
-  const bioContainerStyle = {
-    display: "flex",
-    background: "rgba(9, 10, 10, 0.7)" /* Charcoal with 70% opacity */,
-    color: "white",
-    fontWeight: "700",
-    borderRadius: "10px",
-    boxShadow: "0 0 10px rgba(6, 3, 28, 0.2)",
-    margin: "2em",
-  };
-
-  const contentContainerStyle = {
-    display: "flex",
-    flexDirection: "column", // Stack children vertically
-    alignItems: "center", // Center horizontally
-    padding: "30px",
-    flex: 1, // Take up remaining space
-  };
-
-  const titleStyle = {
-    fontSize: "60px",
-    marginTop: "0",
-    padding: "100px",
-  };
-
-  const textStyle = {
-    fontSize: "25px",
-    lineHeight: "1.5",
-    marginTop: "20px", // Adjust the margin-top to add spacing between title and text
-  };
-
-  const bioImageStyle = {
-    height: "100vh",
-    flex: "0 0 auto",
-    borderRadius: "2em",
-  };
+  
 
   return (
     <>
-      <div style={bioContainerStyle}>
-        <div style={bioImageStyle}>
+      <div className ="bioContainerStyle">
+        <div className="bioImageStyle">
           <img
             src="/images/bioPic.jpg"
             alt="Damien Shane"
@@ -52,9 +19,9 @@ function Bio() {
             }}
           />
         </div>
-        <div style={contentContainerStyle}>
-          <h1 style={titleStyle}>The Beat Mastermind</h1>
-          <p style={textStyle}>
+        <div className="contentContainerStyle">
+          <h1 className="titleStyle">The Beat Mastermind</h1>
+          <p className="textStyle">
             EDM, Electro Techno, Dance <br />
             Damien Shane, not only a DJ but also a skilled producer, invites you
             to embark on an immersive musical journey through his electrifying

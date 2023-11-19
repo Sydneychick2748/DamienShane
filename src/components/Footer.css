@@ -87,4 +87,39 @@
     /* TikTok Black */
     background-color: #ff0050;
   }
+
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium devices */
+
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) {
+  /* Styles for large devices */
+
+}
+
+
+
   
+/* Small devices (phones) */
+@media only screen and (max-width: 767px) {
+  /* Styles for small devices */
+
+
+ .footer-social-icons {
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+    margin-left: 5px !important;
+    border-radius: 10px;
+}
+.list-footer{
+  font-size: 15px;
+}
+}
