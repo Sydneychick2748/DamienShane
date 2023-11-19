@@ -117,4 +117,15 @@ padding-top: 50px;
   @media only screen and (min-width: 992px) {
     /* Styles for large devices */
   }
+ /* For screens with exactly 1024px width */
+@media only screen and (min-width: 993px) and (max-width: 1221px) {
+    /* Your styles for 1024px width go here */
+    .bioImageStyle {
+        border-radius: 2em;
+        flex: 0 0 auto;
+        
+        height: 50vh;
+    }
+
+  }
   
