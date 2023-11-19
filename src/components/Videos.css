@@ -75,6 +75,36 @@
 /* Medium devices (tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* Styles for medium devices */
+  /* Styles for small devices */
+  .video-player {
+   
+    /* width: 1000px; */
+    height: 600px;
+    /* width: 800px !important; */
+    /* margin: 25%; */
+    width: auto;
+    border-radius: 20px;
+}
+
+.video-container {
+   display: block;
+   
+    
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+
+
+}
+.video-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+flex: 1 1;
+text-align: center;
+padding: 0px;
+
+}
 }
 
 /* Large devices (desktops) */

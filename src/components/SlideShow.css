@@ -57,17 +57,119 @@
 }
 
 }
+@media only screen and (max-width: 767px) {
+   /* Styles for small devices */
+   .slider-container {
+    /* height: auto; */
+    /* height: fit-content; */
+    height: auto 2px;
+}
+.MainSlideContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  /* margin: 40px; */
+  padding: 10px;
+  /* margin: auto; */
+  margin: auto 2;
+}
+
+.bioContainerStyle {
+   display: block
+  
+}
+.video-player {
+  /* width: 1000px; */
+  height: 600px;
+  width: auto;
+}
+}
+
+@media only screen and (max-width: 767px) {
+ /* Styles for small devices */
+ .slider-container {
+  /* height: auto; */
+  /* height: fit-content; */
+  height: auto 2px;
+}
+.MainSlideContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin: 40px;
+  padding: 10px;
+  margin: auto;
+  margin: auto 2;
+  margin-top: 30px;
+}
+.bioContainerStyle {
+ display: block
+
+}
+.video-player {
+/* width: 1000px; */
+height: 600px;
+width: auto;
+}
+
+}
+
+
 
 
 /* Medium devices (tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* Styles for medium devices */
+  /* Styles for small devices */
+  .slider-container {
+    /* height: auto; */
+    /* height: fit-content; */
+    height: auto 2px;
+}
+.MainSlideContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  /* margin: 40px; */
+  padding: 10px;
+  /* margin: auto; */
+  margin: auto 2;
 }
 
-/* Large devices (desktops) */
-@media only screen and (min-width: 992px) {
-  /* Styles for large devices */
-}
-
+.bioContainerStyle {
+   display: block
   
+}
+.video-player {
+  /* width: 1000px; */
+  height: 600px;
+  width: auto;
+}
+
+}
+
+/* For screens with exactly 1024px width */
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+  /* Your styles for 1024px width go here */
+  .MainSlideContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 40px;
+    padding: 10px;
+    height: auto;
+}
+}
+
  
