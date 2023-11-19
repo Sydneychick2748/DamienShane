@@ -124,7 +124,7 @@ padding-top: 50px;
         border-radius: 2em;
         flex: 0 0 auto;
         
-        height: 50vh;
+        height: 50vh !important;
     }
 
   }
