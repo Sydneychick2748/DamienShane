@@ -63,7 +63,7 @@ const YOUR_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 
   return (
     <div className="login-box">
-      <h1>Bookings</h1>
+      <h1>BOOKINGS</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div className="user-box">
           <input
