@@ -6,6 +6,7 @@ import Bio from "../src/components/Bio";
 import Music from "../src/components/Music";
 import Videos from "../src/components/Videos";
 import Contact from "../src/components/Contact";
+import MyCalendar from "./components/MyCalendar";
 
 import SlideShow from "../src/components/SlideShow";
 
@@ -20,14 +21,18 @@ function App() {
       </section>
       <SlideShow />
       <section id="music">
-        <Music />
+     <Music/>
       </section>
       <section id="videos">
         <Videos />
       </section>
+      <MyCalendar />
       <section id="contact">
         <Contact />
       </section>
+      
+     
+   
     <Footer/>
     </div>
   );
