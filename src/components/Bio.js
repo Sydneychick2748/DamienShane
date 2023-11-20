@@ -8,7 +8,7 @@ function Bio() {
     <>
       <div className ="bioContainerStyle">
         <div className="bioImageStyle">
-          <img
+          <img 
             src="/images/bioPic.jpg"
             alt="Damien Shane"
             style={{
