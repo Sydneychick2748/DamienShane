@@ -20,7 +20,7 @@ function Bio() {
           />
         </div>
         <div className="contentContainerStyle">
-          <h1 className="titleStyle">The Beat Mastermind</h1>
+         
           <p className="textStyle">
             EDM, Electro Techno, Dance <br />
             Damien Shane, not only a DJ but also a skilled producer, invites you
