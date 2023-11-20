@@ -104,6 +104,9 @@
     /* margin: 25%; */
     margin-right: 15px;
 }
+.list-footer{
+  font-size: 13px;
+}
 }
 
 @media only screen and (max-width: 767px) {

@@ -138,7 +138,6 @@ nav li{ margin: 1.2rem; }
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
-
 @media screen and (min-width: 800px){
   .nav-toggle-label,
   .nav-toggle{
@@ -196,7 +195,7 @@ nav li{ margin: 1.2rem; }
   header {
     align-items: center;
     /* color: #e84393; */
-    position: fixed;
+    /* position: fixed; */
     text-align: center;
     background: black;
     color: white;
@@ -228,6 +227,7 @@ body {
   background-blend-mode: multiply; /* Adjust the blend mode as needed */
  
   background-repeat: no-repeat;
+  margin:0;
  /* Prevent background image from repeating */
 }
 
@@ -242,7 +242,7 @@ body {
   header {
     align-items: center;
     /* color: #e84393; */
-    position: fixed;
+    /* position: fixed; */
     text-align: center;
     background: black;
     color: white;
