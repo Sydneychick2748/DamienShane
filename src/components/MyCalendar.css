@@ -20,36 +20,38 @@
   
   /* Media query for small screens (max-width: 767px) */
   @media only screen and (max-width: 767px) {
-    #calendar-container {
-     
-    }
-    .fc .fc-button-primary {
-        background-color: var(--fc-button-bg-color);
-        border-color: var(--fc-button-border-color);
-        color: var(--fc-button-text-color);
-        font-size: small;
-    }
-    .fc .fc-toolbar-title {
-        /* font-size: 1.75em; */
-        margin: 0px;
-        font-size: 25px;
-  }
+    
+.fc .fc-toolbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
 }
-  
+.fc .fc-daygrid-day-events {
+    margin-top: 1px;
+    font-size: 10px;
+
+}
+}
   /* Media query for medium screens (min-width: 768px) and (max-width: 991px) */
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     #calendar-container {
       max-width: 600px; /* Adjust max-width for medium screens */
     }
-    .fc .fc-button-primary {
-        background-color: var(--fc-button-bg-color);
-        border-color: var(--fc-button-border-color);
-        color: var(--fc-button-text-color);
-        font-size: small;
-    }
-    .fc .fc-toolbar-title {
-        /* font-size: 1.75em; */
-        margin: 0px;
-        font-size: 25px;
-  }
+.fc .fc-toolbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px !important;
 }
+div.fc-toolbar-chunk{
+   
+}
+
+.fc .fc-daygrid-day-events {
+    margin-top: 1px;
+    font-size: 10px;
+
+
+}
+  }
